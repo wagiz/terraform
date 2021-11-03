@@ -67,7 +67,9 @@ output "a" {
   value = var.a
 }
 
-variable "y" {}
+variable "y" {
+  default = "x100"
+}
 output "y" {
   value = var.y
 }
