@@ -66,3 +66,8 @@ variable "a" {}
 output "a" {
   value = var.a
 }
+
+variable "y" {}
+output "y" {
+  value = var.y
+}
