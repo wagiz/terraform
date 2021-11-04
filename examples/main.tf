@@ -26,7 +26,7 @@ resource "aws_security_group" "allow_sample" {
       ipv6_cidr_blocks = []
       prefix_list_ids  = []
       security_groups  = []
-
+      self             = false
     }
   ]
 
