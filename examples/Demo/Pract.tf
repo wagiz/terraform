@@ -1,8 +1,7 @@
-variable "AFI" {
-  default = "300"
+variable "abc" {
+  default="100"
 }
 
-variable "sample" {
-  default = "Hello Ghana"
+output "abc" {
+  value = "var.abc"
 }
-
