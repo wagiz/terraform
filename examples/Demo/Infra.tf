@@ -49,34 +49,3 @@ resource "aws_security_group" "allow_sample" {
   }
 }
 
-terraform {
-  backend "s3" {
-    bucket = "terraform-wagiz"
-    key    = "terraform-wagiz/key"
-    region = "us-east-1"
-  }
-}
-
-{
-"Version": "2012-10-17",
-"Statement": [
-{
-"Effect": "Allow",
-"Action": "s3:ListBucket",
-"Resource": "arn:aws:s3:::terraform-wagiz"
-},
-{
-"Effect": "Allow",
-"Action": ["s3:GetObject", "s3:PutObject"],
-"Resource": "arn:aws:s3:::terraform-wagiz/key"
-}
-]
-}
-
-terraform {
-  backend "s3" {
-    bucket = "terraform-wagiz"
-    key    = "example/sample/terraform.tfstate"
-    region = "us-east-1"
-  }
-}
