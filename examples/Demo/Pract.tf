@@ -1,3 +1,8 @@
-output "abc" {
-  value = "Hello Wold"
+variable "AFI" {
+  default = "300"
 }
+
+variable "sample" {
+  default = "Hello Ghana"
+}
+
