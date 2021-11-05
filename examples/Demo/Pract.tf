@@ -1,6 +1,6 @@
-variable "abc" {
+variable "abc1" {
   default="100"
 }
-output "abc" {
+output "abc1" {
   value = "var.abc"
 }
